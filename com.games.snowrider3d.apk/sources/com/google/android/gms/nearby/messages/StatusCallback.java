@@ -1,0 +1,7 @@
+package com.google.android.gms.nearby.messages;
+/* compiled from: com.google.android.gms:play-services-nearby@@18.5.0 */
+/* loaded from: classes2.dex */
+public abstract class StatusCallback {
+    public void onPermissionChanged(boolean z) {
+    }
+}

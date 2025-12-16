@@ -1,0 +1,12 @@
+package com.unity3d.player.a;
+
+import android.view.MotionEvent;
+import android.view.View;
+/* renamed from: com.unity3d.player.a.a */
+/* loaded from: classes2.dex */
+public final class View$OnTouchListenerC0045a implements View.OnTouchListener {
+    @Override // android.view.View.OnTouchListener
+    public final boolean onTouch(View view, MotionEvent motionEvent) {
+        return true;
+    }
+}

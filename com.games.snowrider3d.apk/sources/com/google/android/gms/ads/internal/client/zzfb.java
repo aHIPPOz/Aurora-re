@@ -1,0 +1,40 @@
+package com.google.android.gms.ads.internal.client;
+
+import android.os.Bundle;
+import android.text.TextUtils;
+import com.google.android.gms.ads.RequestConfiguration;
+import org.json.JSONException;
+import org.json.JSONObject;
+/* compiled from: com.google.android.gms:play-services-ads-api@@24.5.0 */
+/* loaded from: classes.dex */
+public final class zzfb {
+    private final String zza;
+    private final Bundle zzb;
+    private final String zzc;
+
+    public zzfb(String str, Bundle bundle, String str2) {
+        this.zza = str;
+        this.zzb = bundle;
+        this.zzc = str2;
+    }
+
+    public final Bundle zza() {
+        return this.zzb;
+    }
+
+    public final String zzb() {
+        return this.zza;
+    }
+
+    public final String zzc() {
+        String str = this.zzc;
+        if (!TextUtils.isEmpty(str)) {
+            try {
+                return new JSONObject(str).optString("request_id", RequestConfiguration.MAX_AD_CONTENT_RATING_UNSPECIFIED);
+            } catch (JSONException unused) {
+                return RequestConfiguration.MAX_AD_CONTENT_RATING_UNSPECIFIED;
+            }
+        }
+        return RequestConfiguration.MAX_AD_CONTENT_RATING_UNSPECIFIED;
+    }
+}

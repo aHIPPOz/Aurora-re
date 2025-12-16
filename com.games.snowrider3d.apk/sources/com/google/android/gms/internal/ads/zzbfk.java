@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.ads;
+/* compiled from: com.google.android.gms:play-services-ads-api@@24.5.0 */
+/* loaded from: classes2.dex */
+public final class zzbfk {
+    public static final zzbeo zza = zzbeo.zzd("gads:adapter_initialization:red_button", false);
+    public static final zzbeo zzb = zzbeo.zzd("gads:adapter_settings:red_button", false);
+    public static final zzbeo zzc = zzbeo.zzd("gads:banner_refresh_sequential_caching:red_button", false);
+    public static final zzbeo zzd = zzbeo.zzd("gads:adaptive_banner:fail_invalid_ad_size", true);
+    public static final zzbeo zze = zzbeo.zzd("gads:signal_adapters:red_button", false);
+    public static final zzbeo zzf = zzbeo.zzd("gads:use_non_templated_client_sdkcore:enabled", false);
+
+    static {
+        zzbeo.zzd("gads:ads_service_force_stop:red_button", true);
+        zzbeo.zzd("gads:ad_serving:enabled", true);
+        zzbeo.zzd("gads:ad_preloading:enabled", true);
+        zzbeo.zzd("gads:sdk_use_dynamic_module", true);
+    }
+}

@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.nearby;
+
+import android.content.Context;
+import com.google.android.gms.common.api.internal.ListenerHolder;
+import com.google.android.gms.common.internal.Preconditions;
+/* compiled from: com.google.android.gms:play-services-nearby@@18.5.0 */
+@Deprecated
+/* loaded from: classes2.dex */
+final class zzgn extends zzjr {
+    private final Context zza;
+    private final ListenerHolder zzb;
+
+    public zzgn(Context context, ListenerHolder listenerHolder) {
+        this.zza = (Context) Preconditions.checkNotNull(context);
+        this.zzb = (ListenerHolder) Preconditions.checkNotNull(listenerHolder);
+    }
+
+    @Override // com.google.android.gms.internal.nearby.zzjs
+    public final void zzc(zzla zzlaVar) {
+        this.zzb.notifyListener(new zzgm(this, zzlaVar));
+    }
+
+    @Override // com.google.android.gms.internal.nearby.zzjs
+    public final void zzd(zzli zzliVar) {
+        this.zzb.notifyListener(new zzgl(this, zzliVar));
+    }
+}

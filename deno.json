@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "start": "deno run -A core-llm/engine.ts",
+    "dev": "deno run -A --watch=core-llm,ghidra-integration vscode-extension/extension.ts",
+    "setup": "echo 'Install mlc-llm locally and start the inference server as described in README'"
+  }
+}

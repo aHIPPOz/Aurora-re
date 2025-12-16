@@ -1,0 +1,19 @@
+package com.google.common.collect;
+
+import javax.annotation.CheckForNull;
+@ElementTypesAreNonnullByDefault
+/* loaded from: classes2.dex */
+final class NullnessCasts {
+    @ParametricNullness
+    public static <T> T uncheckedCastNullableTToT(@CheckForNull T t) {
+        return t;
+    }
+
+    @ParametricNullness
+    public static <T> T unsafeNull() {
+        return null;
+    }
+
+    private NullnessCasts() {
+    }
+}

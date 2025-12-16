@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.nearby;
+
+import java.util.NoSuchElementException;
+/* compiled from: com.google.android.gms:play-services-nearby@@18.5.0 */
+/* loaded from: classes2.dex */
+final class zzst extends zzsy {
+    boolean zza;
+    final /* synthetic */ Object zzb;
+
+    public zzst(Object obj) {
+        this.zzb = obj;
+    }
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        return !this.zza;
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        if (!this.zza) {
+            this.zza = true;
+            return this.zzb;
+        }
+        throw new NoSuchElementException();
+    }
+}

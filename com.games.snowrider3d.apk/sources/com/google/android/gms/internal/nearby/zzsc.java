@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.nearby;
+
+import java.io.Serializable;
+/* compiled from: com.google.android.gms:play-services-nearby@@18.5.0 */
+/* loaded from: classes2.dex */
+public abstract class zzsc implements Serializable {
+    public static zzsc zzc() {
+        return zzrz.zza;
+    }
+
+    public static zzsc zzd(Object obj) {
+        obj.getClass();
+        return new zzsh(obj);
+    }
+
+    public abstract Object zza();
+
+    public abstract boolean zzb();
+}

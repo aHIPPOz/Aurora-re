@@ -1,0 +1,23 @@
+package com.google.android.gms.internal.ads;
+/* compiled from: com.google.android.gms:play-services-ads@@24.5.0 */
+/* loaded from: classes2.dex */
+public final class zzemj implements zzhgr {
+    private final zzhha zza;
+    private final zzhha zzb;
+    private final zzhha zzc;
+
+    private zzemj(zzhha zzhhaVar, zzhha zzhhaVar2, zzhha zzhhaVar3, zzhha zzhhaVar4) {
+        this.zza = zzhhaVar2;
+        this.zzb = zzhhaVar3;
+        this.zzc = zzhhaVar4;
+    }
+
+    public static zzemj zzc(zzhha zzhhaVar, zzhha zzhhaVar2, zzhha zzhhaVar3, zzhha zzhhaVar4) {
+        return new zzemj(zzhhaVar, zzhhaVar2, zzhhaVar3, zzhhaVar4);
+    }
+
+    /* renamed from: zza */
+    public final zzemh zzb() {
+        return new zzemh(zzffu.zzc(), ((zzcvp) this.zza).zzc(), (zzfdl) this.zzb.zzb(), ((Integer) this.zzc.zzb()).intValue());
+    }
+}
